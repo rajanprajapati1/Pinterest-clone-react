@@ -1,0 +1,96 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fuggles', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+    /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.navbar>#logo_Side{
+    display: flex;
+    align-items: center;
+}
+#logo_Side i{
+ font-size: 2rem;
+}
+#logo_Side span{
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 2.6rem;
+    font-family: 'fuggles',cursive;
+}
+.vistbtn{
+    margin-left: 2rem;
+}
+.vistbtn button{
+    border: 1px solid #dadada;
+    padding: 12px 45px;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#button{
+    margin-right: 2rem;
+}
+#button span {
+    padding:13px 10px;
+    margin: 5px;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 1px solid #dadada;
+    cursor: pointer;
+    color: black;
+}
+.topbanner {
+    width: 100%;
+    display: grid;
+    place-content: center;
+    height: 30px;
+    background-color: black;
+    color: white;
+}
+
+.topbanner span{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

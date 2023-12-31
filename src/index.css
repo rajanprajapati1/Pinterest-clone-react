@@ -1,0 +1,419 @@
+@font-face {
+  font-family: Cool;
+  src: url('./assets/Fonts/LEMONMILK-Regular.otf');
+}
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Cool;
+}
+.Main{
+  width: 100%;
+  height:100vh;
+  color: black;
+  overflow-x: hidden;
+  /* background:url('../src/assets/img/9d7e385b0995398c5cedde8c65324130.jpg'); */
+  object-fit: cover;
+}
+
+/* Navbar */
+.navbar{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+}
+.navbar .logo{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  gap: 10px;
+}
+.navbar .logo .searchbar{
+  background-color: rgba(128, 128, 128, 0.384);
+  height: 40px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+.searchFa{
+  margin: 0 10px;
+}
+.ico .UserLogo{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.tooltip-text{
+  position: absolute;
+  font-size: 0.5rem;
+  top: 3.5rem;
+  height: 20px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+.ico:hover .tooltip-text{
+  opacity: 1;
+}
+.logo .searchbar input{
+  border: none;
+  outline: none;
+  padding: 8px ;
+  width: 90%;
+  background-color: transparent;
+}
+
+.navbar .imgLogo{
+  width: 38px;
+  margin-left: 45px;
+}
+.navbar .icons{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-right: 45px;
+}
+.icons .ico{
+  width: 43px;
+  height:43px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+justify-content: center;
+color: #5c5c5c;
+cursor: pointer;
+}
+.icons .ico:hover{
+  background-color: #e9e9e9;
+  color: #5f5f5f;
+}
+/*  */
+ /* Card */
+ .posts {
+  width: 100%;
+  height: auto;
+ }
+ .posts .selectbar{
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0.2px 0.1px 1px gray;
+ }
+ .selectbar button{
+  padding: 10px 15px;
+  border: none;
+border-radius: 5px;
+background-color: transparent;
+position: relative;
+ }
+ .selectbar hr{
+  position: absolute;
+  width: 67%;
+  height: 3px;
+  margin-top: 12px;
+  border-radius: 8px;
+  background-color: black;
+  border: none;
+ }
+ .selectbar button:hover{
+  background-color: #c7c6c6;
+ }
+ :root{
+  --card_border_radius : 16px;
+  --row_increment : 10px;
+}
+ 
+.card{
+  padding:0;
+  margin:45px 5px;
+  border-radius: var(--card_border_radius);
+  font-weight: 800;
+  font-family: monospace;
+  transition: 0.1s ease-in-out;
+  position: relative;
+}
+.card .img_sec{
+  width: 100%;
+  border-radius: inherit;
+  height: 100%;
+}
+.card:hover  .overlay{
+  display: flex;
+}
+.user_de{
+  position: absolute;
+  width: 100%;
+  height: 38px;
+  /* background-color: #e60019; */
+  bottom: -35px;
+  border-radius: inherit;
+  margin-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.user_de .user_profile{
+  width: 35px;
+  height: 35px;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+.user_de .name {
+  display: flex;
+  flex-direction: column;
+  line-height: 15px;
+}
+.user_de .name h3{
+  margin-left: 12px;
+  font-size: 0.9rem;
+}
+.user_de .name strong{
+  font-weight: 300;
+  margin-left: 15px;
+  font-size: 0.6rem;
+}
+.user_profile img{
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+/* .user_de . */
+.card .overlay{
+  width: 100%;
+  background-color: #5f5f5f75;
+  height: 98%;
+  top: 0;
+  border-radius: inherit;
+  position: absolute;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: end;
+  transition: 0.5s ease-in-out;
+}
+.overlay .save{
+  margin-right: 25px;
+  margin-top: 10px;
+}
+.save button{
+  border-radius: 15px;
+  border: none;
+padding: 5px 15px;
+letter-spacing: 2px;
+background-color: #e60019;
+color: white;
+cursor: pointer;
+}
+.overlay .over_button{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.over_button button:nth-child(1){
+  border-radius: 12px;
+  padding: 8px 0;
+  width: 60%;
+  border: none;
+  font-size: 0.5rem;
+  overflow: hidden;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.over_button button:nth-child(2){
+  border-radius: 50%;
+  padding: 5px;
+border: none;
+margin: 0 10px;
+cursor: pointer;
+}.over_button button:nth-child(3){
+  border-radius: 50%;
+  padding: 5px ;
+border: none;
+margin: 0 10px;
+cursor: pointer;
+}
+.img_sec img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+/* masonry css */
+.my-masonry-grid {
+  display: flex;
+  width: 100%;
+  margin-left:-15px;
+}
+.my-masonry-grid_column {
+  padding-left: 35px; /* gutter size */
+  background-clip: padding-box;
+  width: 100%;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 15px;
+}
+.Login_pages {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: url('../src/assets/img/9d7e385b0995398c5cedde8c65324130.jpg');
+  background-size: cover; /* This will make the background image cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+
+.login{
+  border-radius: 8px;
+  width: 32%;
+  height: 85%;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login .logo{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.login .logo img{
+ width: 38px;
+ margin: 8px 0;
+}
+.login .logo small{
+  margin: 5px 0;
+}
+.login form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  
+}
+.login form label{
+  margin: 5px 0;
+  font-size: 0.88rem;
+}
+.login form input{
+  padding: 15px 85px 15px 10px;
+  background-color: #a19f9f6c;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  outline: none;
+  border: none;
+}
+.login form span{
+  width: 100%;
+  font-size: 0.7rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+  margin: 10px 0;
+}
+.login form button {
+  padding: 15px 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #E60023;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.login form h4{
+  margin: 15px 0;
+}
+.login .other_options{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.other_options button{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color:white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.other_options button img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.terms{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.terms p{
+  font-size: 0.65rem;
+  margin: 10px 0 8px  13px ;
+  color: #ACADB1;
+  line-height: 18px;
+}
+.terms p strong{
+  color: black;
+  font-weight: bolder;
+}
+.terms hr{
+  width: 80%;
+  margin: 5px auto;
+  background-color: #ACADB1;
+}
+.terms h4{
+  font-size: 0.7rem;
+  color: #ACADB1;
+}
+.terms h4 strong{
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
